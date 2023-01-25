@@ -26,7 +26,7 @@ export class CompanyComponent implements OnInit {
     this.LoadCompany();
   }
 
-  displayColums: string[] = ["id", "name", "empcount", "revenue", "address", "isactive", "action"]
+  displayColums: string[] = ["id", "EmployeeCode", "EmployeeName", "Department", "Designation", "Proficiency", "ReportingManager","ReportingLeader", "action"]
 
   Openpopup(id: any) {
     const _popup = this.dialog.open(PopupComponent, {
